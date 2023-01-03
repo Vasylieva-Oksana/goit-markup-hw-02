@@ -1,0 +1,168 @@
+.list {       /*відключення маркерів та пдкреслень*/
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+.logo {
+font-family: var(--sekondary-font)
+font-style: normal; ?
+font-weight: 800;  ?
+font-size: 18px;  
+line-height: 1.33;
+display: flex;          ?
+align-items: center;    ?
+letter-spacing: 0.03em;
+text-transform: uppercase;  ?
+color: #4D5AE5;      ?
+color: #2E2F42;      ?
+
+
+}
+.menu {      /**/
+}
+.menu-item {
+}
+.{
+    color: #434455; 
+}
+/*=======================Для зберігання палітри кольорів 
+макета (текст, фон, виділення) використовуються CSS-змінні.*/
+:root {
+--primery-font: 'Roboto', sans-serif ;
+--sekondary-font: 'Raleway', sans-serif;
+--accent-color: ; ;
+--menu-text-color:#2E2F42; 
+--logo-color-veb: #4D5AE5;
+--logo-color-studio:#2E2F42; 
+--menu-body-p-text-color: #434455;
+--h2-h3-tekst-color: #2E2F42;
+--h1-tekst-color: color: #FFFFFF;;
+
+--normal-Button-text: #FFFFFF;
+--focus-button-text: #4D5AE5;
+
+--fokus-color-button: #404BBF;
+--normal-color-button: #F4F4FD;;
+
+--footer-heder-background-color:#2E2F42;
+}
+
+/*=======================BUTTON==================================*/
+.button {
+    font-family: var(--primery-font)
+font-style: normal;               /*прибрати, normal-italik для курсиву*/
+font-weight: 500;            
+font-size: 16px;
+line-height: 1,5;                 /*написать в множителях*/
+display: flex;                    /*убрать*/
+align-items: center;              /*убрать*/
+text-align: center;
+letter-spacing: 0.04em;
+color: #4D5AE5;
+background-color:#F4F4FD;
+border: 1px solid transparent; /*граници рамка, ширина рамка/// сплошная ////прозрачность*/
+align-items: center;             
+cursor: pointer; /*курсор - если нет*/
+}
+  /*«С5» Текст контактів в хедері і футері змінює колір при ховері і фокусі*/
+.button:hover,
+.button:focus {
+    color: #FFFFFF;
+    background-color: #4D5AE5; 
+}
+.button-studio    /* кнопка студіо  ДАТИ ВЛАСТИВОСТІ*/
+/*=======================BODY==================================*/
+body {
+font-family: var(--primery-font)
+font-weight: 400;
+font-size: 16px;
+line-height: 1,5;
+letter-spacing: 0.02em;
+color: #434455;  /*«С8» Вказані альтернативні варіанти шрифту і тип сімейства (без зарубок) в кінці переліку font-family в елемента <body>.*/
+}
+address {
+    font-style: normal; /* Зняти курсив*/
+}
+
+.menu-link {     /* Body Bold font-family: 'Raleway', sans-serif;font-family: 'Roboto', sans-serif;*/  
+
+font-weight: 600;
+font-size: 16px;
+line-height: 1,5;  /*делить line-height/font-size*/
+letter-spacing: 0.02em;
+color: #2E2F42;
+}  /*стилі для посилань*/
+
+
+.menu-link:hover,
+.menu-link:focus {
+    color: #FFFFFF;
+    background-color: #4D5AE5; 
+}  
+.email
+.tel {
+font-weight: 400;
+font-size: 16px;
+line-height: 1,5;
+letter-spacing: 0.02em;
+color: #434455;
+} 
+/* Header 3 */
+.pogpis-h3 {
+font-weight: 500;
+font-size: 20px;
+line-height: 1,2;
+letter-spacing: 0.02em;
+color: #2E2F42;
+}
+.pogpis-h2 {          !!!!!!!!!!!!!!!
+
+}               
+
+.footer {
+background-color
+position: absolute;
+width: 1440px;
+height: 310px;
+left: 0px;
+top: 1764px;
+background: #2E2F42;
+}
+
+.footer-text {
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 16px;
+line-height: 1,5;
+letter-spacing: 0.02em;
+color: #E7E9FC;
+}
+.footer-color {
+
+}
+
+
+/*«C4» Інтерактивні елементи (кнопки і посилання), при наведенні мишкою або фокусі з клавіатури, мають активний стан, вказаний в Style guide (зміна кольору)*/
+/*
+*::selection {
+    color: aquamarine;
+    background-color: black;
+}  
+*/
+
+/* скидання маркерів... можна через *  -звертання до всіх */
+/*.list {
+    list-style: none;
+}*/
+/*ul,ol {
+    list-style: none; /*скидати можна через списки*/
+/*} Краще присвоїти назву тим елементам в HTML, які потрібно, напр .list 
+.list {
+    list-style: none;
+} */
+
+/* скидання пІдкреслень */
+/*a {
+    text-decoration: none;
+}*/
