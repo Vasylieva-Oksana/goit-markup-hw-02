@@ -1,182 +1,173 @@
-.list {       /*відключення маркерів та пдкреслень*/
-.list {       
-    list-style: none;
+/*відключення маркерів та пдкреслень*/
+.list {
+  list-style: none;
 }
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
-.logo {                                     
-font-family: var(--sekondary-font);
-font-style: normal; 
-font-weight: 800;  
-font-size: 18px;  
-line-height: 1.33;
-display: flex;          
-align-items: center;    
-letter-spacing: 0.03em;
-text-transform: uppercase;  
-color: var(--logo-color-veb);    
-/* убрала 1, перебивает*/  
+.logo {
+  font-family: var(--sekondary-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-color-veb);
+  /* убрала 1, перебивает*/
 }
-.logo-heder
-{
-color: var(--logo-color-studio);
+.logo-heder {
+  color: var(--logo-color-studio);
 }
 .logo-footer {
-color: var(--logo-color-footer);
+  color: var(--logo-color-footer);
 }
 /*=======================Для зберігання палітри кольорів 
 макета (текст, фон, виділення) використовуються CSS-змінні.*/
 :root {
---primery-font: 'roboto', sans-serif;
---sekondary-font: 'Raleway', sans-serif;
---body-text-color:#2E2F42; 
---logo-color-veb:#4D5AE5;
---logo-color-studio:#2E2F42;
---logo-color-footer:#F4F4FD;
---menu-body-p-text-color:#434455;
+  --primery-font: "roboto", sans-serif;
+  --sekondary-font: "Raleway", sans-serif;
+  --body-text-color: #2e2f42;
+  --logo-color-veb: #4d5ae5;
+  --logo-color-studio: #2e2f42;
+  --logo-color-footer: #f4f4fd;
+  --menu-body-p-text-color: #434455;
 
---signature-two-three-tekst-color: #2E2F42;
---signature-one-tekst-color: #FFFFFF;
-/*===========кнопки Портфоліо текст===========*/
---normal-button-text:#4D5AE5;
---focus-color-text: #FFFFFF;
-/*===========кнопки Портфоліо фон ===========*/
---normal-color-button: #F4F4FD;
---fokus-color-button: #404BBF;
+  --signature-two-three-tekst-color: #2e2f42;
+  --signature-one-tekst-color: #ffffff;
+  /*===========кнопки Портфоліо текст===========*/
+  --normal-button-text: #4d5ae5;
+  --focus-color-text: #ffffff;
+  /*===========кнопки Портфоліо фон ===========*/
+  --normal-color-button: #f4f4fd;
+  --fokus-color-button: #404bbf;
 
-/*===========кнопка студіо текст фон норм===========*/
---studio-btn-txt-color: #FFFFFF;
---studio-btn-background-color: #4D5AE5;
+  /*===========кнопка студіо текст фон норм===========*/
+  --studio-btn-txt-color: #ffffff;
+  --studio-btn-background-color: #4d5ae5;
 
-/*===========кнопка студіо фон===========*/
---studio-btn-background-color-fokus: #404BBF; 
+  /*===========кнопка студіо фон===========*/
+  --studio-btn-background-color-fokus: #404bbf;
 
---footer-heder-background-color: #2E2F42;
---footer-txt-color: #E7E9FC;
-/*============= портфоліо cекція 4 підложка*/
---section-four-background-color: #F4F4FD;
+  --footer-heder-background-color: #2e2f42;
+  --footer-txt-color: #e7e9fc;
+  /*============= портфоліо cекція 4 підложка*/
+  --section-four-background-color: #f4f4fd;
 }
 
 /*=======================BUTTON==================================*/
 .button {
-font-family: var(--primery-font);
-font-weight: 500;            
-font-size: 16px;
-line-height: 1.5;                 /*написать в множителях*/
-display: flex;                    /*убрать?*/
-align-items: center;              /*убрать?*/
-text-align: center;
-letter-spacing: 0.04em;
-color: var(--normal-button-text);
-background-color: var(--normal-color-button);
-border: 1px solid transparent; /*граници рамка, ширина рамка/// сплошная ////прозрачность*/
-align-items: center;             
-cursor: pointer; /*курсор - если нет*/
+  font-family: var(--primery-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5; /*написать в множителях*/
+  display: flex; /*убрать?*/
+  align-items: center; /*убрать?*/
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--normal-button-text);
+  background-color: var(--normal-color-button);
+  border: 1px solid transparent; /*граници рамка, ширина рамка/// сплошная ////прозрачность*/
+  align-items: center;
+  cursor: pointer; /*курсор - если нет*/
 }
 /*«С5» Текст контактів в хедері і футері змінює колір при ховері і фокусі*/
 .button:hover,
 .button:focus {
-color: var(--focus-color-text);
-background-color: var(--fokus-color-button); 
+  color: var(--focus-color-text);
+  background-color: var(--fokus-color-button);
 }
 .button-studio {
-font-family: var(--primery-font);
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-display: flex;
-align-items: center;
-letter-spacing: 0.04em;
-color: var(--studio-btn-txt-color);
-background-color: var(--studio-btn-background-color);
-border: 1px solid transparent; /*граници рамка, ширина рамка/// сплошная ////прозрачность*/
-align-items: center;             
-cursor: pointer; /*курсор - если нет*/
-}   
+  font-family: var(--primery-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--studio-btn-txt-color);
+  background-color: var(--studio-btn-background-color);
+  border: 1px solid transparent; /*граници рамка, ширина рамка/// сплошная ////прозрачность*/
+  align-items: center;
+  cursor: pointer; /*курсор - если нет*/
+}
 .button-studio:hover,
 .button-studio:focus {
-background-color:var(--studio-btn-background-color-fokus);
+  background-color: var(--studio-btn-background-color-fokus);
 }
 /*=======================BODY==================================*/
 body {
-font-family: var(--primery-font);
-font-weight: 400;
-font-size: 16px;      /*убирать?*/
-line-height: 1.5;     /*УБРАТЬ ВСЕ ЗАПЯТЫЕ*/
-letter-spacing: 0.02em;
-color: var(--menu-body-p-text-color);                 
+  font-family: var(--primery-font);
+  font-weight: 400;
+  font-size: 16px; /*убирать?*/
+  line-height: 1.5; /*УБРАТЬ ВСЕ ЗАПЯТЫЕ*/
+  letter-spacing: 0.02em;
+  color: var(--menu-body-p-text-color);
 }
 .address {
-font-style: normal; /* Зняти курсив*/
+  font-style: normal; /* Зняти курсив*/
 }
-.menu-link {  /* Body Bold font-family: 'Raleway', sans-serif;font-family: 'Roboto', sans-serif;*/  
-font-weight: 600;
-font-size: 16px;   /*убирать?*/
-line-height: 1.5;  /*делить line-height/font-size*/
-letter-spacing: 0.02em;
-color:#2E2F42;
-}  /*стилі для посилань*/
+.menu-link {
+  /* Body Bold font-family: 'Raleway', sans-serif;font-family: 'Roboto', sans-serif;*/
+  font-weight: 600;
+  font-size: 16px; /*убирать?*/
+  line-height: 1.5; /*делить line-height/font-size*/
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+} /*стилі для посилань*/
 
 /*«С17» У стилях не повторюються значення властивостей, які задані браузером за замовчуванням. Наприклад, посиланням не потрібно вказувати cursor: pointer, а абзацам font-style: normal або font-weight: 400.*/
 .email,
 .tel {
-font-family: var(--primery-font);   
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;    
-} 
+  font-family: var(--primery-font);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
 /* Header 3 */
-.signature-one  {} /* на англ  написать в канале Ментор скопировать*/
+.signature-one {
+} /* на англ  написать в канале Ментор скопировать*/
 
 .visually-hidden {
-position: absolute;
-white-space: nowrap;
-width: 1px;
-height: 1px;
-overflow: hidden;
-border: 0;
-padding: 0;
-clip: rect(0 0 0 0);
-clip-path: inset(50%);
-margin: -1px;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .signature-three {
-font-family: var(--primery-font); 
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-            
+  font-family: var(--primery-font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
-.signature-two {   
-font-family: var(--primery-font);
-font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-text-align: center;
-letter-spacing: 0.02em;
-text-transform: capitalize;             
-}               
+.signature-two {
+  font-family: var(--primery-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
 .section-four {
-background: var(--section-four-background-color);    /* ВЫНОСЫТЬ В ПЕРЕМЕННЫЕ?*/
+  background: var(--section-four-background-color); /* ВЫНОСЫТЬ В ПЕРЕМЕННЫЕ?*/
 }
 .footer {
-background-color position: absolute;
-width: 1440px;
-height: 310px;
-left: 0px;
-top: 1764px;
-background: #2E2F42;   /*проблема*/
+  background-color: #2e2f42; /*проблема*/
 }
 .footer-text {
-font-family: var(--primery-font);
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--footer-txt-color); 
+  font-family: var(--primery-font);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-txt-color);
 }
-
 
 /*«C4» Інтерактивні елементи (кнопки і посилання), при наведенні мишкою або фокусі з клавіатури, мають активний стан, вказаний в Style guide (зміна кольору)*/
 /*
