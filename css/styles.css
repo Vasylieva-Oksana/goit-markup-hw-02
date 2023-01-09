@@ -57,11 +57,10 @@
   --footer-txt-color: #e7e9fc;
   /*============= портфоліо cекція 4 підложка*/
   --section-four-background-color: #f4f4fd;
-}
 
-/*========================НАВИГАЦІЯ==============================*/
-.navigation {
 
+  /*==========НАВІГАЦІЯ(КРОМЕ ТЕЛЕФОНА) ФОКУС_ХОВЕР ==========*/
+  --naviganion-hover-fokus: #404BBF;
 }
 
 /*=======================BUTTON==================================*/
@@ -116,6 +115,8 @@ body {
 }
 
 
+/*========================НАВИГАЦІЯ==============================*/
+
 .address {
   font-style: normal; /* Зняти курсив*/
 }
@@ -141,7 +142,7 @@ body {
 .menu-link:hover,
 .menu-link:focus
 {
-  color: #404BBF;
+  color: var(--naviganion-hover-fokus);
 }
 /* Header 1 section 1 */
 .section-one-color-bacgraund {
