@@ -35,6 +35,8 @@
   --logo-color-footer: #f4f4fd;
   --menu-body-p-text-color: #434455;
 
+  --section-one-color-bacgraund: #2E2F42;
+
   --signature-two-three-tekst-color: #2e2f42;
   --signature-one-tekst-color: #ffffff;
   /*===========кнопки Портфоліо текст===========*/
@@ -55,6 +57,11 @@
   --footer-txt-color: #e7e9fc;
   /*============= портфоліо cекція 4 підложка*/
   --section-four-background-color: #f4f4fd;
+}
+
+/*========================НАВИГАЦІЯ==============================*/
+.navigation {
+
 }
 
 /*=======================BUTTON==================================*/
@@ -107,6 +114,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--menu-body-p-text-color);
 }
+
+
 .address {
   font-style: normal; /* Зняти курсив*/
 }
@@ -127,8 +136,27 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
-/* Header 3 */
+.email:hover,
+.email:focus,
+.menu-link:hover,
+.menu-link:focus
+{
+  color: #404BBF;
+}
+/* Header 1 section 1 */
+.section-one-color-bacgraund {
+  background-color: var(--section-one-color-bacgraund);
+}
+
 .signature-one {
+font-family: var(--primery-font);
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
+text-align: center;
+letter-spacing: 0.02em;
+color:var(--signature-one-tekst-color);
+
 } /* на англ  написать в канале Ментор скопировать*/
 
 .visually-hidden {
